@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../oldPaddySnake"
+		},
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../Snake"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Snake"
+	}
+}
