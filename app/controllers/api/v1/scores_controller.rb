@@ -25,9 +25,11 @@ class API::V1::ScoresController < ApplicationController
   end
 
   def create 
-    # This needs to change to current user when log in
-    # is working
-    Score.create(user_id: User.first.id, value: params[:score])
+    user = User.find_by(username: params[:user])
+    if user
+      Score.create(user_id: user.id, value: params[:score]) 
+    end
+
     # send back new high score list
      scores = getHighScores
      render json: scores

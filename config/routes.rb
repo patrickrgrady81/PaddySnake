@@ -6,8 +6,12 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :scores, only: [:index, :show, :create]
       resources :users, only: [:index]
+      resources :sessions, only: [:create]
+      resources :registrations, only: [:create]
 
-      post "users/login", to: "users#login"
+      post "/login", to: "sessions#create"
     end
   end
+
+  # resources: sessions, only: [:create]
 end
