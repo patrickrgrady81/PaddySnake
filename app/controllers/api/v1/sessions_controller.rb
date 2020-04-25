@@ -8,7 +8,7 @@ class API::V1::SessionsController < ApplicationController
       session[:user_id] = user.id
       render json: {user: user}
     else
-      render json: {user: nil}
+      render json: {user: nil, sent: {username: username, password: password}}
     end
   end
 end
