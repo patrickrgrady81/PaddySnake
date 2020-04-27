@@ -1,1 +1,0 @@
-Rails.application.config.session_store :cookie_store, key: "_paddysnake", domain: "http://https://paddysnake.herokuapp.com/"
