@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root to: "pages#home"
 
-
   namespace :api, constraints: {format: :json}, defaults: {format: :json} do
     namespace :v1 do
       resources :scores, only: [:index, :show, :create]
@@ -10,8 +9,7 @@ Rails.application.routes.draw do
       resources :registrations, only: [:create]
 
       post "/login", to: "sessions#create"
+      post "/signup", to: "users#create"
     end
   end
-
-  # resources: sessions, only: [:create]
 end
