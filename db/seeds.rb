@@ -3,6 +3,7 @@ User.destroy_all
 User.create(username: "Anonymous", email:"anon@pat.com", password:"password")
 User.create(username: "Pat", email:"pat@pat.com", password:"password")
 User.create(username: "a", email:"pat2@pat.com", password:"a")
+User.create(username: "jen", email: "jen@jen.com", password: "jen")
 
 # u = User.find_by(username: "Pat")
 # puts "User #{u.email} Created!"
