@@ -1,7 +1,7 @@
 User.destroy_all
 
-User.create(username: "Anonymous", email:"anon@pat.com", password:"password")
-User.create(username: "Pat", email:"pat@pat.com", password:"password")
+User.create(username: "anonymous", email:"anon@pat.com", password:"password")
+User.create(username: "pat", email:"pat@pat.com", password:"password")
 User.create(username: "a", email:"pat2@pat.com", password:"a")
 User.create(username: "jen", email: "jen@jen.com", password: "jen")
 
