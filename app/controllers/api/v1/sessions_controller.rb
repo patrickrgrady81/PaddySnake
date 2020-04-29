@@ -17,4 +17,16 @@ class API::V1::SessionsController < ApplicationController
     session[:user_id] = nil 
     render json: {logout: true}
   end
+
+  def check 
+    
+    # binding.pry
+    
+    if session[:user_id] 
+      user = User.find(session[:user_id])
+      render json: {session: true, user: user}
+    else
+      render json: {session: false}
+    end
+  end
 end
