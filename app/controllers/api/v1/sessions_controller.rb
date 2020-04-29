@@ -11,4 +11,10 @@ class API::V1::SessionsController < ApplicationController
       render json: {user: nil, sent: {username: username, password: password}}
     end
   end
+
+  def destroy 
+    return if !params[:logout]
+    session[:user_id] = nil 
+    render json: {logout: true}
+  end
 end
