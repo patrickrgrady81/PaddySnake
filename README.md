@@ -1,24 +1,12 @@
-# README
+# PaddySnake (back end)
+This is a snake game based on the old nokia snake I used to play on my flip phone. I made slight changes to the ideas in that game. I like the fact that I can go through walls Pacman style. Also, with the backend players can register and login to get their scores saved in the top 10 if they are good enough.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usage
+To use this app, just clone, run bundle, rails db:migrate, rails db:seed and then rails s.
+Then run the front end of the snake app.
 
-Things you may want to cover:
+## Contributing
+Since this is a school project, contributions are not allowed at this time.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
