@@ -12,6 +12,7 @@ class API::V1::ScoresController < ApplicationController
     info = names.map.with_index(0) do |name, i|
       {name: name, score: scores[i].value}
     end
+    # selrializer fast_json, activeSerializer
     render json: info
   end
 
